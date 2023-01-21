@@ -1,4 +1,4 @@
-# College Compare
+# :school: College Compare
 An in-progress project that will help prospective college students in the US gather, customize, and display college data.
 
 ## Current Stage of Development
