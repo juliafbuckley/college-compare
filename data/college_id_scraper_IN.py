@@ -34,6 +34,7 @@ class collegeIDScraper():
         options = Options()
         #options.add_argument('--headless')
         options.add_argument('--disable-gpu')
+        # test commit
         
         # Fix access denied issue
         ua = UserAgent()
