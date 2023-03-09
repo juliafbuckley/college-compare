@@ -26,7 +26,7 @@ from fake_useragent import UserAgent
 
 # Globals
 
-path = 'chromedriver.exe'
+path = 'chromedriver'
 url = 'https://nces.ed.gov/collegenavigator/?id=198419'
 
 class collegeDetailsScraper():
@@ -111,6 +111,7 @@ class collegeDetailsScraper():
                 case "Student-to-faculty ratio:":
                     college_ratio = info.strip()
         
+        # Scrape the values I want from the general info section
         has_rotc = False
         has_abroad = False
         ap_credit = False
@@ -124,8 +125,11 @@ class collegeDetailsScraper():
             ap_credit = True
         if "IB" in general_info:
             ib_credit = True
-        
-        tuition_info = college_details_soup.find("div", id="divctl00_cphCollegeNavBody_ucInstitutionMain_ctl00").text
+
+        tuition_info = college_details_soup.find("div", id="divctl00_cphCollegeNavBody_ucInstitutionMain_ctl00")
+        tuition_total_element = tuition_info.find("tbody")
+        print(tuition_total_element.tr.children)
+
 
                 
 
