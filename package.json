@@ -1,7 +1,7 @@
 {
   "name": "college-compare",
   "version": "1.0.0",
-  "description": "",
+  "description": "An in-progress project that will help prospective college students in the US gather, customize, and display college data.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +9,22 @@
     "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Julia Buckley",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
   },
   "engines": {
     "node": "16.17.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliafbuckley/college-compare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juliafbuckley/college-compare/issues"
+  },
+  "homepage": "https://github.com/juliafbuckley/college-compare#readme"
 }
